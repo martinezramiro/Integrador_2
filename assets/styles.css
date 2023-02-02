@@ -637,3 +637,114 @@ iframe {
     background-clip: text;
     -webkit-background-clip: text;
 }
+
+.logreg__header__logo {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-family: Impact;
+    letter-spacing: 1px;
+    color: #2192FF;
+    text-shadow: 1px 1px 1px black;
+}
+.logreg__return {
+    display: flex;
+    font-family: tahoma;
+    position: absolute;
+    right: 30px;
+}
+.logreg__return a {
+    display: flex;
+    gap: 4px;
+    color: whitesmoke;
+    transition: all 0.2s linear;
+}
+.logreg__return a:hover {
+    transition: all 0.2s linear;
+    color: darkorange;
+}
+#logreg {
+    display: flex;
+    max-width: 1400px;
+    width: 100%;
+    height: 85vh;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(rgb(0, 44, 0), #131415 60%);
+    padding-top: 50px;
+}
+.logreg__form__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.logreg__form__container h1 {
+    font-family: tahoma;
+    color: whitesmoke;
+    letter-spacing: 1px;
+}
+.logreg__form__input {
+    border: none;
+    border-bottom: 1px solid darkorange;
+    background: none;
+    color: grey;
+    padding: 3px;
+}
+.logreg__form__container button {
+    background: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid whitesmoke;
+    transition: all 0.2s linear;
+}
+.logreg__form__container button:hover {
+    transition: all 0.2s linear;
+    background-color: darkorange;
+    border-color: darkorange;
+}
+.logreg__form__boton {
+    color: whitesmoke;
+    font-family: tahoma;
+    font-size: 15px;
+}
+#logreg__footer {
+    display: flex;
+    max-width: 1400px;
+    width: 100%;
+    height: 100px;
+    background: #131415;
+}
+.logreg__footer {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    padding: 0px 25px;
+}
+.logreg__footer img {
+    height: 100%;
+}
+.logreg__footer p {
+    border-radius: 5px;
+    border-left: 2px solid darkorange;
+    border-right: 2px solid whitesmoke;
+    padding: 5px 15px 5px 15px;
+    font-family: georgia;
+    font-size: 15px;
+    color: whitesmoke;
+}
+.logreg__footer p span {
+    font-family: tahoma;
+    font-weight: 600;
+    font-size: 18px;
+    background: linear-gradient(90deg, darkorange 0%, whitesmoke 100%);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+

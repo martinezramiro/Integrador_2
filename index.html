@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./pages/login.html">
-    <link rel="stylesheet" href="./pages/register.html">
+    <link rel="stylesheet" href="./pages/login.html" />
+    <link rel="stylesheet" href="./pages/register.html" />
     <link rel="stylesheet" href="./assets/styles.css" />
     <link rel="stylesheet" href="./assets/mediaqueries.css" />
     <link rel="stylesheet" href="./assets/animaciones.css" />
@@ -19,127 +19,149 @@
     <title>Entrega final de módulo_2</title>
   </head>
 
-<body>
+  <body>
     <header>
-        <nav class="navbar">
-          <label for="menu-toggle" class="menu-label">
-            <i class="fa-solid fa-bars"></i>
-          </label>
-          <input id="menu-toggle" type="checkbox" />
-          <ul class="navbar__list">
-            <li><a href="#hero"><i class="fa-solid fa-house"></i></a></li>
-            <li><a href="#about-us"><i class="fa-solid fa-people-group"></i></a></li>
-            <li><a href="#cards"><i class="fa-brands fa-shopify"></i></a></li>
-            <li><a href="#contact"><i class="fa-regular fa-address-card"></i></a></li>
-          </ul>
-        </nav>
-        <div class="header__logo">Fútbol<img src="./assets/img/digital futbol2.png" alt="Logo de Futbol Digital" class="logo">Digital</div>
-        <div class="header__form__cart">
-          <form class="header__form">
-            <i class="fa-solid fa-magnifying-glass"></i><input type="text" placeholder="Buscar..." class="form__input" required>
-          </form>
-          <label for="cart-toggle" class="cart-label">
+      <nav class="navbar">
+        <label for="menu-toggle" class="menu-label">
+          <i class="fa-solid fa-bars"></i>
+        </label>
+        <input id="menu-toggle" type="checkbox" />
+        <ul class="navbar__list">
+          <li>
+            <a href="#hero"><i class="fa-solid fa-house"></i></a>
+          </li>
+          <li>
+            <a href="#about-us"><i class="fa-solid fa-people-group"></i></a>
+          </li>
+          <li>
+            <a href="#cards"><i class="fa-brands fa-shopify"></i></a>
+          </li>
+          <li>
+            <a href="#contact"><i class="fa-regular fa-address-card"></i></a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__logo">
+        Fútbol<img
+          src="./assets/img/digital futbol2.png"
+          alt="Logo de Futbol Digital"
+          class="logo"
+        />Digital
+      </div>
+      <div class="header__form__cart">
+        <form class="header__form">
+          <i class="fa-solid fa-magnifying-glass"></i
+          ><input
+            type="text"
+            placeholder="Buscar..."
+            class="form__input"
+            required
+          />
+        </form>
+        <label for="cart-toggle" class="cart-label">
           <i class="fa-solid fa-cart-arrow-down"></i>
-          </label>
-          <input type="checkbox" id="cart-toggle" />
-          <div class="cart">
-            <h2>Tus productos:</h2>
-            <div class="cart-item">
-              <img
-                src="./assets/img/cards_img/pelota_adidas.jpg"
-                alt="Imagen de pelota Al Rihla"
-              />
-              <div class="item-info">
-                <h3 class="item-title">Al Rihla</h3>
-                <p class="item-bid">Precio por unidad:</p>
-                <span class="item-price">$15.000</span>
-              </div>
-              <div class="item-handler">
-                <span class="quantity-handler down">-</span>
-                <span class="item-quantity">1</span>
-                <span class="quantity-handler up">+</span>
-              </div>
+        </label>
+        <input type="checkbox" id="cart-toggle" />
+        <div class="cart">
+          <h2>Tus productos:</h2>
+          <div class="cart-item">
+            <img
+              src="./assets/img/cards_img/pelota_adidas.jpg"
+              alt="Imagen de pelota Al Rihla"
+            />
+            <div class="item-info">
+              <h3 class="item-title">Al Rihla</h3>
+              <p class="item-bid">Precio por unidad:</p>
+              <span class="item-price">$15.000</span>
             </div>
-            <div class="cart-item">
-              <img
-                src="./assets/img/cards_img/camiseta_argentina.png"
-                alt="Imagen de camiseta de Argentina"
-              />
-              <div class="item-info">
-                <h3 class="item-title">Argentina</h3>
-                <p class="item-bid">Precio por unidad:</p>
-                <span class="item-price">$30.300</span>
-              </div>
-              <div class="item-handler">
-                <span class="quantity-handler down">-</span>
-                <span class="item-quantity">1</span>
-                <span class="quantity-handler up">+</span>
-              </div>
+            <div class="item-handler">
+              <span class="quantity-handler down">-</span>
+              <span class="item-quantity">1</span>
+              <span class="quantity-handler up">+</span>
             </div>
-            <div class="cart-item">
-              <img
-                src="./assets/img/cards_img/adidas_nemeziz.jpg"
-                alt="Imagen de botín Adidas Nemeziz"
-              />
-              <div class="item-info">
-                <h3 class="item-title">A. Nemeziz</h3>
-                <p class="item-bid">Precio por unidad:</p>
-                <span class="item-price">$30.900</span>
-              </div>
-              <div class="item-handler">
-                <span class="quantity-handler down">-</span>
-                <span class="item-quantity">1</span>
-                <span class="quantity-handler up">+</span>
-              </div>
-            </div>
-            <div class="cart-item">
-              <img
-                src="./assets/img/cards_img/camiseta_francia.png"
-                alt="Imagen de camiseta de Francia"
-              />
-              <div class="item-info">
-                <h3 class="item-title">Francia</h3>
-                <p class="item-bid">Precio por unidad:</p>
-                <span class="item-price">$28.200</span>
-              </div>
-              <div class="item-handler">
-                <span class="quantity-handler down">-</span>
-                <span class="item-quantity">1</span>
-                <span class="quantity-handler up">+</span>
-              </div>
-            </div>
-            <div class="cart-item">
-              <img
-                src="./assets/img/cards_img/nike_mercurial_superfly8.jpg"
-                alt="Imagen de botín Nike Mercurial SuperFly 8"
-              />
-              <div class="item-info">
-                <h3 class="item-title">Mercurial SF8</h3>
-                <p class="item-bid">Precio por unidad:</p>
-                <span class="item-price">$35.200</span>
-              </div>
-              <div class="item-handler">
-                <span class="quantity-handler down">-</span>
-                <span class="item-quantity">1</span>
-                <span class="quantity-handler up">+</span>
-              </div>
-            </div>
-            <span class="divider"></span>
-            <div class="cart-total">
-              <p>Total:</p>
-              <span>$139.600</span>
-            </div>
-            <button class="btn-add">Comprar</button>
           </div>
-          <div class="overlay"></div>
+          <div class="cart-item">
+            <img
+              src="./assets/img/cards_img/camiseta_argentina.png"
+              alt="Imagen de camiseta de Argentina"
+            />
+            <div class="item-info">
+              <h3 class="item-title">Argentina</h3>
+              <p class="item-bid">Precio por unidad:</p>
+              <span class="item-price">$30.300</span>
+            </div>
+            <div class="item-handler">
+              <span class="quantity-handler down">-</span>
+              <span class="item-quantity">1</span>
+              <span class="quantity-handler up">+</span>
+            </div>
+          </div>
+          <div class="cart-item">
+            <img
+              src="./assets/img/cards_img/adidas_nemeziz.jpg"
+              alt="Imagen de botín Adidas Nemeziz"
+            />
+            <div class="item-info">
+              <h3 class="item-title">A. Nemeziz</h3>
+              <p class="item-bid">Precio por unidad:</p>
+              <span class="item-price">$30.900</span>
+            </div>
+            <div class="item-handler">
+              <span class="quantity-handler down">-</span>
+              <span class="item-quantity">1</span>
+              <span class="quantity-handler up">+</span>
+            </div>
+          </div>
+          <div class="cart-item">
+            <img
+              src="./assets/img/cards_img/camiseta_francia.png"
+              alt="Imagen de camiseta de Francia"
+            />
+            <div class="item-info">
+              <h3 class="item-title">Francia</h3>
+              <p class="item-bid">Precio por unidad:</p>
+              <span class="item-price">$28.200</span>
+            </div>
+            <div class="item-handler">
+              <span class="quantity-handler down">-</span>
+              <span class="item-quantity">1</span>
+              <span class="quantity-handler up">+</span>
+            </div>
+          </div>
+          <div class="cart-item">
+            <img
+              src="./assets/img/cards_img/nike_mercurial_superfly8.jpg"
+              alt="Imagen de botín Nike Mercurial SuperFly 8"
+            />
+            <div class="item-info">
+              <h3 class="item-title">Mercurial SF8</h3>
+              <p class="item-bid">Precio por unidad:</p>
+              <span class="item-price">$35.200</span>
+            </div>
+            <div class="item-handler">
+              <span class="quantity-handler down">-</span>
+              <span class="item-quantity">1</span>
+              <span class="quantity-handler up">+</span>
+            </div>
+          </div>
+          <span class="divider"></span>
+          <div class="cart-total">
+            <p>Total:</p>
+            <span>$139.600</span>
+          </div>
+          <button class="btn-add">Comprar</button>
+        </div>
+        <div class="overlay"></div>
       </div>
     </header>
 
     <main>
-
       <section id="hero">
         <div class="hero__img">
-          <img src="./assets/img/hero_img/BotinPelota.jpg" alt="Imagen de botines conduciendo una pelota">
+          <img
+            src="./assets/img/hero_img/BotinPelota.jpg"
+            alt="Imagen de botines conduciendo una pelota"
+          />
         </div>
         <div class="hero__info">
           <div class="hero__info__text">
@@ -147,25 +169,34 @@
             <p>Sumate a nuestro team y destacá en el campo de juego</p>
           </div>
           <div class="hero__botones">
-              <button><a href="./pages/login.html">Ingresar</a></button>
-              <button><a href="./pages/register.html">Registrate</a></button>
+            <button><a href="./pages/login.html">Ingresar</a></button>
+            <button><a href="./pages/register.html">Registrate</a></button>
           </div>
         </div>
       </section>
       <section id="about-us">
         <div class="au__info">
           <h2>Sobre nosotros</h2>
-          <p>Somos una empresa con más de diez años de trayectoria en el mercado digital. Nuestros productos, de excelente calidad, te harán lucir y desempeñarte como un verdadero deportista de elite. Brindamos una atención rápida y sus compras son totalmente seguras en nuestra web. ¡Envíos a todo el país!.</p>
+          <p>
+            Somos una empresa con más de diez años de trayectoria en el mercado
+            digital. Nuestros productos, de excelente calidad, te harán lucir y
+            desempeñarte como un verdadero deportista de elite. Brindamos una
+            atención rápida y sus compras son totalmente seguras en nuestra web.
+            ¡Envíos a todo el país!.
+          </p>
         </div>
         <div class="au__redes">
           <p>Enterate más en nuestras redes sociales:</p>
           <div class="au__redes__iconos">
             <a href="https://es-la.facebook.com/" target="_blank"
-            ><i class="fa-brands fa-facebook"></i></a>
-          <a href="https://www.instagram.com/" target="_blank"
-            ><i class="fa-brands fa-instagram"></i></a>
-          <a href="https://twitter.com/?lang=es" target="_blank"
-            ><i class="fa-brands fa-twitter"></i></a>
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+            <a href="https://www.instagram.com/" target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="https://twitter.com/?lang=es" target="_blank"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
           </div>
         </div>
         <div class="gradient__bg"></div>
@@ -175,13 +206,16 @@
         <div class="cards__title">
           <h2>Nuestros productos</h2>
         </div>
-        <div class="cards__second__title"> 
+        <div class="cards__second__title">
           <h3>Botines</h3>
           <a href="#">Ver más...</a>
-        </div> 
+        </div>
         <div class="cards__products">
           <div class="card">
-            <img src="./assets/img/cards_img/nike_mercurial_superfly8.jpg" alt="Botines Nike SuperFly 8">
+            <img
+              src="./assets/img/cards_img/nike_mercurial_superfly8.jpg"
+              alt="Botines Nike SuperFly 8"
+            />
             <div class="card__info">
               <div class="card__info__title__price">
                 <h4>Nike Mercurial SF 8</h4>
@@ -193,7 +227,10 @@
             </div>
           </div>
           <div class="card">
-            <img src="./assets/img/cards_img/nike_tiempo.jpg" alt="Nike Tiempo">
+            <img
+              src="./assets/img/cards_img/nike_tiempo.jpg"
+              alt="Nike Tiempo"
+            />
             <div class="card__info">
               <div class="card__info__title__price">
                 <h4>Nike Tiempo</h4>
@@ -205,7 +242,10 @@
             </div>
           </div>
           <div class="card">
-            <img src="./assets/img/cards_img/adidas_nemeziz.jpg" alt="Adidas Nemeziz">
+            <img
+              src="./assets/img/cards_img/adidas_nemeziz.jpg"
+              alt="Adidas Nemeziz"
+            />
             <div class="card__info">
               <div class="card__info__title__price">
                 <h4>Adidas Nemeziz</h4>
@@ -217,7 +257,10 @@
             </div>
           </div>
           <div class="card">
-            <img src="./assets/img/cards_img/puma_futureZ1.4.png" alt="Puma Future Z 1.4">
+            <img
+              src="./assets/img/cards_img/puma_futureZ1.4.png"
+              alt="Puma Future Z 1.4"
+            />
             <div class="card__info">
               <div class="card__info__title__price">
                 <h4>Puma Future Z 1.4</h4>
@@ -229,13 +272,16 @@
             </div>
           </div>
         </div>
-        <div class="cards__second__title"> 
+        <div class="cards__second__title">
           <h3>Camisetas</h3>
           <a href="#">Ver más...</a>
-        </div> 
+        </div>
         <div class="cards__products">
           <div class="card">
-            <img src="./assets/img/cards_img/camiseta_argentina.png" alt="Camiseta de Argentina">
+            <img
+              src="./assets/img/cards_img/camiseta_argentina.png"
+              alt="Camiseta de Argentina"
+            />
             <div class="card__info">
               <div class="card__info__title__price">
                 <h4>Argentina</h4>
@@ -247,7 +293,10 @@
             </div>
           </div>
           <div class="card">
-            <img src="./assets/img/cards_img/camiseta_francia.png" alt="Camiseta de Francia">
+            <img
+              src="./assets/img/cards_img/camiseta_francia.png"
+              alt="Camiseta de Francia"
+            />
             <div class="card__info">
               <div class="card__info__title__price">
                 <h4>Francia</h4>
@@ -259,7 +308,10 @@
             </div>
           </div>
           <div class="card">
-            <img src="./assets/img/cards_img/camiseta_brasil.png" alt="Camiseta de Brasil">
+            <img
+              src="./assets/img/cards_img/camiseta_brasil.png"
+              alt="Camiseta de Brasil"
+            />
             <div class="card__info">
               <div class="card__info__title__price">
                 <h4>Brasil</h4>
@@ -271,7 +323,10 @@
             </div>
           </div>
           <div class="card">
-            <img src="./assets/img/cards_img/camiseta_inglaterra.png" alt="Camiseta de Inglaterra">
+            <img
+              src="./assets/img/cards_img/camiseta_inglaterra.png"
+              alt="Camiseta de Inglaterra"
+            />
             <div class="card__info">
               <div class="card__info__title__price">
                 <h4>Inglaterra</h4>
@@ -283,13 +338,16 @@
             </div>
           </div>
         </div>
-        <div class="cards__second__title"> 
+        <div class="cards__second__title">
           <h3>Pelotas</h3>
           <a href="#">Ver más...</a>
-        </div> 
+        </div>
         <div class="cards__products">
           <div class="card">
-            <img src="./assets/img/cards_img/pelota_nike.png" alt="Pelota Nike">
+            <img
+              src="./assets/img/cards_img/pelota_nike.png"
+              alt="Pelota Nike"
+            />
             <div class="card__info">
               <div class="card__info__title__price">
                 <h4>Nike Premier League</h4>
@@ -301,7 +359,10 @@
             </div>
           </div>
           <div class="card">
-            <img src="./assets/img/cards_img/pelota_puma.jpg" alt="Pelota Puma">
+            <img
+              src="./assets/img/cards_img/pelota_puma.jpg"
+              alt="Pelota Puma"
+            />
             <div class="card__info">
               <div class="card__info__title__price">
                 <h4>Puma La Liga</h4>
@@ -313,7 +374,10 @@
             </div>
           </div>
           <div class="card">
-            <img src="./assets/img/cards_img/pelota_adidas.jpg" alt="Pelota Adidas">
+            <img
+              src="./assets/img/cards_img/pelota_adidas.jpg"
+              alt="Pelota Adidas"
+            />
             <div class="card__info">
               <div class="card__info__title__price">
                 <h4>Adidas Al Rihla</h4>
@@ -325,7 +389,10 @@
             </div>
           </div>
           <div class="card">
-            <img src="./assets/img/cards_img/pelota_adidas2.jpg" alt="Pelota Adidas">
+            <img
+              src="./assets/img/cards_img/pelota_adidas2.jpg"
+              alt="Pelota Adidas"
+            />
             <div class="card__info">
               <div class="card__info__title__price">
                 <h4>Adidas Champions L.</h4>
@@ -342,37 +409,66 @@
         <div class="contact__info">
           <div class="contact__info__text">
             <h2>Contactanos</h2>
-            <i class="sobre fa-regular fa-envelope"><span>futboldigital@gmail.com</span></i>
-            <i class="location fa-solid fa-location-dot"><span>Av. Santa Cruz 2022</span></i>
-            <i class="whatsaap fa-brands fa-whatsapp"><span>3764-788622</span></i>
-            <p>Dejanos tu comentario o consulta y te responderemos a la brevedad! También te dejamos la ubicación de nuestro depósito en donde realizamos los envíos a todo el país.</p>
+            <i class="sobre fa-regular fa-envelope"
+              ><span>futboldigital@gmail.com</span></i
+            >
+            <i class="location fa-solid fa-location-dot"
+              ><span>Av. Santa Cruz 2022</span></i
+            >
+            <i class="whatsaap fa-brands fa-whatsapp"
+              ><span>3764-788622</span></i
+            >
+            <p>
+              Dejanos tu comentario o consulta y te responderemos a la brevedad!
+              También te dejamos la ubicación de nuestro depósito en donde
+              realizamos los envíos a todo el país.
+            </p>
           </div>
           <div class="contact__form">
             <form class="contact__form__container">
-              <input type="text" placeholder="Nombre completo" class="contact__form__input" required>
-              <input type="email" placeholder="Email" class="contact__form__input" required>
-              <input type="text" placeholder="Escribe tu comentario..." class="contact__form__input__comm" required>
-              <button><a href="#" class="contact__form__boton">Enviar</a></button>
-          </form>
+              <input
+                type="text"
+                placeholder="Nombre completo"
+                class="contact__form__input"
+                required
+              />
+              <input
+                type="email"
+                placeholder="Email"
+                class="contact__form__input"
+                required
+              />
+              <input
+                type="text"
+                placeholder="Escribe tu comentario..."
+                class="contact__form__input__comm"
+                required
+              />
+              <button>
+                <a href="#" class="contact__form__boton">Enviar</a>
+              </button>
+            </form>
           </div>
         </div>
         <div class="contact__iframe">
           <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3542.334291301628!2d-55.93991098538424!3d-27.396498520151862!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9457bdd64f9b36e7%3A0x7a9a3b6f51219f2f!2sC.%20116%205899-5949%2C%20N3300BFL%20Posadas%2C%20Misiones!5e0!3m2!1ses-419!2sar!4v1669726813101!5m2!1ses-419!2sar"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3542.334291301628!2d-55.93991098538424!3d-27.396498520151862!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9457bdd64f9b36e7%3A0x7a9a3b6f51219f2f!2sC.%20116%205899-5949%2C%20N3300BFL%20Posadas%2C%20Misiones!5e0!3m2!1ses-419!2sar!4v1669726813101!5m2!1ses-419!2sar"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
         </div>
         <div class="contact__gradient__bg"></div>
       </section>
     </main>
     <section id="footer">
       <footer class="footer">
-        <p><span>Ramiro Martinez</span> ©2022. Todos los derechos reservados.</p>
-        <img src="./assets/img/logo futbol digital.png" alt="logo">
+        <p>
+          <span>Ramiro Martinez</span> ©2022. Todos los derechos reservados.
+        </p>
+        <img src="./assets/img/logo futbol digital.png" alt="logo" />
       </footer>
     </section>
-</body>
+  </body>
 </html>
