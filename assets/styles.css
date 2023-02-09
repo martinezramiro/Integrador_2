@@ -388,12 +388,18 @@ header {
     text-shadow: 2px 2px 2px black;
     letter-spacing: 1px;
     padding: 0px 0px 20px 20px;
+    justify-content: center;
+    align-items: center;
+
 }
 .cards__title h2 {
     background: linear-gradient(90deg, #131415, darkorange);
     padding: 0px 20px 7px 0px;
     width: 50%;
     border-radius: 0px 5rem 5rem 0px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 .cards__second__title {
     padding: 10px 30px 10px 50px;
