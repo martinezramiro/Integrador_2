@@ -59,7 +59,7 @@
         margin-left: 25px;
     }
     .menu-label:hover {
-        color: orangered;
+        color: darkorange;
         transition: all 0.2s ease-out;
     }
     #menu-toggle:checked + .navbar__list {

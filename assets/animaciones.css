@@ -1,5 +1,4 @@
 html {
-    scroll-padding-top: 100px;
     scroll-behavior: smooth;
 }
 .overlay {
@@ -14,4 +13,45 @@ html {
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     display: none;
+}
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes slide-right {
+    from {
+        transform: translateX(-150%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+@keyframes latido {
+    0%{transform: scale(1);}
+    50%{transform: scale(0.95);}
+    100%{transform: scale(1);}
+}
+
+header {
+    animation: fade 1s ease-out;
+}
+.hero__img {
+    animation: slide-right 2.5s ease-out;
+}
+.header__logo {
+    animation: latido 5s linear infinite alternate;
+}
+.hero__botones {
+    opacity: 0;
+    animation: fade 1.5s ease-in forwards;
+    animation-delay: 2.2s;
+}
+.hero__info__text {
+    opacity: 0;
+    animation: fade 1.5s ease-in forwards;
+    animation-delay: 1.2s;
 }
