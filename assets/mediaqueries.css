@@ -129,6 +129,9 @@
         padding: 0;
         margin: 0;
     }
+    .cart-label {
+        font-size: 18px;
+    }
     .menu-label {
         padding: 0;
         margin: 0;
